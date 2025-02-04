@@ -76,7 +76,7 @@ public class BaseClass extends drivers {
 
 	public void sendKeys(WebElement element, String keys)
 	{
-		element.sendKeys(keys);
+		driver.findElement(By.xpath(keys));
 	}
 
 	// ********FRAMES*********************//

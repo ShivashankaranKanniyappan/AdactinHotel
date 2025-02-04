@@ -11,7 +11,8 @@ Feature: Adactin Hotel - Search Hotel
     And User select the hotel and continue for the payment
     And User should enter the "<FirstName>", "<LastName>", "<BillingAddress>", "<CCNumber>", "<CCType>", "<ExpiryMonth>", "<ExpiryYear>", "<CVV>"
     And User click the bookNow
-    Then it should show the Order Number
+    And it should show the Order Number
+    Then Page should be logged out
 
     Examples: 
       | FirstName | LastName  | BillingAddress | CCNumber         | CCType | ExpiryMonth | ExpiryYear | CVV |

@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(
-				features = {"src/test/resources/AHP01_AdactinLogin.feature"},
+				features = {"src/test/resources/AHP04_CancelBooking.feature"},
 				glue = {"StepDef_Adactin", "hooks"},
 				snippets = SnippetType.CAMELCASE, 
 				plugin = {"pretty", "json:target/cucumber.json", 
